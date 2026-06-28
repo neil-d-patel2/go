@@ -51,6 +51,12 @@ blank identifier _, because go doesnt allow unused local variables
 s := "" // can only be used in a function, can do this for a package lvl variable
 
 
+Fetching a url:
+
+
+
+for many apps, access to informatin from the internet is as important as access to the local file system , go provides a lot of packages grouped under net that make it easy to send and receive informatino through the Internet make low level network connections and set up servers, this is where gos concurrency features become really useful
+
 
 
 
