@@ -30,3 +30,29 @@ the first element of os.Args[0] is the name of the command itself, lets implemen
 
 Go provides usual arithmetic and logical operators, but when applied to strings, it concatentates the values, so sep + os.Args[i] represents the concat of sep and os.Args[i] os.Args[i] 
 
+
+traditional for loop (no parentheses in go)  for initialization; condition; post
+
+for initialization; condition; post {
+    //statements
+}
+
+
+braces are mandatory, parentheses are not, braces must be on the same line as the post statement in go 
+
+
+ 
+
+another from of gos for loop iterates over a range of values from a data type like a string or a slice, we can see this in echo2.go 
+
+The solution to having a for loop but not using the index variable is using a 
+blank identifier _, because go doesnt allow unused local variables
+
+s := "" // can only be used in a function, can do this for a package lvl variable
+
+
+
+
+
+
+
