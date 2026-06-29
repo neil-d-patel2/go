@@ -51,6 +51,21 @@ fmt.Println(*p) // *p = 1
 *p = 2
 fmt.Println(x) // x = 2
 
+One interesting thing: ***it is perfectly safe for a function to return the address of a local variable***, for instance, in the code below, the local variable v created by this particular call to f will reamin in existence even after the call has returned 
+
+var p = f()
+
+func f() *int {
+    v := 1
+    return &v
+}
+
+each call of f returns a distinct value
+
+fmt.Println(f() == f()) // "false"
+
+pointers are the key for go's flag package which we will see in echo4
+
 
 
 
