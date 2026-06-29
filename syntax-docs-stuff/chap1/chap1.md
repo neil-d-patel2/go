@@ -58,6 +58,8 @@ Fetching a url:
 for many apps, access to informatin from the internet is as important as access to the local file system , go provides a lot of packages grouped under net that make it easy to send and receive informatino through the Internet make low level network connections and set up servers, this is where gos concurrency features become really useful
 
 
+go routine is a concurrent function exeuction, a channel is a commumication mechanism that allows one goroutine to pass values of a specified type to another go routnie. The function main runs in a go rotuine and the go statement creates additional goroutines. 
+
 
 
 
