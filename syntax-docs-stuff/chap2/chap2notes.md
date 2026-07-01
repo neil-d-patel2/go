@@ -66,6 +66,10 @@ fmt.Println(f() == f()) // "false"
 
 pointers are the key for go's flag package which we will see in echo4
 
+another way to create a variable is to use the built in function new, its not like cpp where new is similar to malloc in that it inits variable on teh heap, just a diff way to init a var
+
+new does return a distinct address however 
+
 
 
 
