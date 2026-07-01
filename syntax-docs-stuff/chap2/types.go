@@ -7,12 +7,12 @@ import(
 type team int8
 
 func main() { 
-	v team = 5
-	x = calc(v)
+	var v team = 5
+	x := calc(v)
 	fmt.Println(x)
 }
 
-func calc(t team) {
+func calc(t team) team {
 	t++
 	return t
 }
